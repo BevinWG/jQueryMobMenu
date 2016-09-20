@@ -25,11 +25,8 @@ $option.text($anchor.text());
 $select.append($option);    
 });   
    
-//Create a button to click to
-    var $button = $("<button>Go</button>");
-$("#menu").append($button);
-//bind click to button
-$button.click(function(){
+//bind to select
+$select.change(function(){
 //Go to selects location
     window.location = $select.val();
 });
